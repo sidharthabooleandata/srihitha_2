@@ -12,7 +12,7 @@ warnings.filterwarnings('ignore')
 # ===============================
 # Load & preprocess data
 # ===============================
-FILE_PATH = r"1Y02_Data.xlsx"
+FILE_PATH = "1Y02_Data.xlsx"
 
 @st.cache_data
 def load_data():
@@ -159,4 +159,5 @@ if st.button("Predict BFOUT"):
         st.success(f"🎯 Predicted BFOUT: {prediction:.2f}")
     except Exception as e:
         st.error(f"Prediction error: {str(e)}")
+
 
